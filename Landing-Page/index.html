@@ -10,7 +10,10 @@
 </head>
 <body>
     <section class="section-container background-section-one">
-        <img style="margin:0px auto;" src="assets/images/bf1.png" alt="Logo Black Friday">
+        <picture>
+            <source media="(max-width: 410px)" srcset="assets/images/bf1-peq.png">
+            <img style="margin: 30px auto;" src="assets/images/bf1.png" alt="Logo Black Friday">
+        </picture>
         <div id="dday"></div>
         <p>
             Falta pouco para começar a Black Friday Geek Store!</br>
@@ -18,9 +21,9 @@
         </p>
         <div class="card-container">
             <div id="content">
-                <form id="form">
-                    <input id="nome" type="text" placeholder="Nome" required>
-                    <input id="email" type="email" placeholder="email@exemplo.com" required>
+                <form style="text-align: center;" id="form">
+                    <input id="nome" type="text" placeholder="Nome" required><br>
+                    <input id="email" type="email" placeholder="email@exemplo.com" required><br>
                     <input type="submit" value=" Cadastrar ">
                 </form>
             </div>
